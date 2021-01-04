@@ -9,7 +9,9 @@ function init() {
     //read json
     d3.json("samples.json").then((data) => {
     //filter to get names
-    console.log(data);
+    var parsedData = data.names;
+    console.log(parsedData);
+
     });
 
 };
