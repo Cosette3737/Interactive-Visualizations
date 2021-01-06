@@ -1,0 +1,36 @@
+{
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: black;
+    background-image: url("Images/bacteria2.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+  }
+  
+  /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
+  .container {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 130px;
+    overflow: auto;
+    background-color: #7d7b81;
+    border: 1px solid #7d7b81;
+    opacity: 0.9;
+    
+  }
+
+  .row {
+    background-color: #7d7b81;
+    border: 1px solid #7d7b81; 
+    opacity: .9;
+  }
+  
+  

@@ -48,7 +48,7 @@ function createPlots(selection) {
         var tenOTU_labels=otu_labels.slice(0,10).reverse();
         var combinedlabels=[];
         tenOTU_labels.forEach((otu_label) => {
-        combinedlabels.push("OTU" + otu_label);
+        combinedlabels.push("OTU  " + otu_label);
         var hover = sampleArray2.otu_labels;
         var barcharthover = hover.slice(0,10).reverse();
 
@@ -61,7 +61,7 @@ function createPlots(selection) {
         };
         var barChartData = [barChartTrace];
         var barlayout={
-            title: "Top 10 Operation Taxinomic Units",
+            title: "Top 10 OTUs in Test Subject",
             yaxis: {tickmode: "linear"},
             margin: {
                 l: 150,
@@ -70,7 +70,7 @@ function createPlots(selection) {
                 b: 150
             }
         };
-     Plotly.newPlot("bar", barChartData, barlayout);
+        Plotly.newPlot("bar", barChartData, barlayout);
         
         var BubbleTrace={
             x:otu_labels,
@@ -78,7 +78,8 @@ function createPlots(selection) {
             text:hover,
             mode:"markers",
             marker: { 
-                size: values
+                size: values,
+                color: values
             }}
         var bubblechartData=[BubbleTrace];
         var bublayout={
