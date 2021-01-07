@@ -1,9 +1,9 @@
-
+//initial function grab json file
 function init() {
     var dropdown= d3.select("#selDataset");
     d3.json("js/samples.json").then((Sampledata) => {
         //filter to get names
-        //var parsedData = Sampledata.names;
+        
          var parsedData=Sampledata.names;
        
         //put names into drowdown menu 
@@ -11,19 +11,20 @@ function init() {
         parsedData.forEach((name)=> {
         dropdown.append("option").text(name).property("value");
     });
+    //call the createplot, and meta functions for selected test subject
         createPlots(parsedData[0]);
         createMeta(parsedData[0]);
         })
 }
-
+//run the init function
 init();
-
+// optionchange function when a change is created
 function optionChanged(selection){
     createPlots(selection);
     createMeta(selection);
 }
 function createMeta(selection) {
-
+// create demographic values to be put into dashboard
     d3.json("js/samples.json").then((sampleData) => {
         var parsedData = sampleData.metadata;
         var sampleArray = parsedData.filter(sampleObj => sampleObj.id == selection);
@@ -36,7 +37,7 @@ function createMeta(selection) {
     })
 }
 function createPlots(selection) {
-    //read json
+    //read json create data for bubblegraph and barchart
     d3.json("js/samples.json").then((sampleData) => {
         var parsedData = sampleData.samples;
         var sampleData = parsedData.filter(sampleObj => sampleObj.id == selection);
@@ -69,6 +70,7 @@ function createPlots(selection) {
                 b: 150
             }
         };
+        //barchart created with barchart data and layout
         Plotly.newPlot("bar", barChartData, barlayout);
         
         var BubbleTrace={
