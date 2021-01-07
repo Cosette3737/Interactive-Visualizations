@@ -1,5 +1,4 @@
 
-   
 function init() {
     var dropdown= d3.select("#selDataset");
     d3.json("js/samples.json").then((Sampledata) => {
