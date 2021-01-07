@@ -5,13 +5,15 @@
 
 # Project Scope
 
-* For the scope of this project an interactive dashboard was created to explore the Belly Button Biodiversity Dataset. This dashboard allows the user to select the individual's data to access and analyze by use of a demographic information, a bubleplot and a bar graph. In order to complete this project we utilized the following tools and launguages:
-    - Visual Studio Code
+* For the scope of this project an interactive dashboard was created to explore the Belly Button Biodiversity Dataset. This dashboard allows the user to access the individual's data to analyze and visualize the demographic information, a bubbleplot and a bar graph. In order to complete this project we utilized the following tools and languages:
+   
+   - Visual Studio Code
     - HTML
     - JavaScript
     - D3 
     - CSS
     - JSON
+    - Plotly
  
  
  ![BubbleGraph](https://raw.githubusercontent.com/Cosette3737/Interactive-Visualizations/main/Images/dashboard.JPG)
@@ -19,7 +21,7 @@
 # Process
  - Dashboard Creation
 
-The first step was to import the samples.json file loaded into the App.js and pull the data needed from the json file.  The sample file consists of 3 lists including the names, metadata, and samples. After parsing the data, it is used in 4 different functions.  These functions include init, optionChanged, createMeta, and createPlots.  These functions help initialize the dashboard, select a test subject and create plots to visualize the data.  Allowing selection of the test subject, allows the dataset to be interactive. 
+The first step was to import the samples.json file loaded into the App.js and pull the data needed from the json file.  The sample file consists of 3 lists including the names, metadata, and samples. After parsing the data, it is used in 4 different functions.  These functions include init, optionChanged, createMeta, and createPlots.  These functions help initialize the dashboard, select a test subject and create plots to visualize the data when there is a user change.  Giving the option to select the test subject, the dataset is interactive. 
 
 
  - Styling
