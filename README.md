@@ -1,6 +1,6 @@
 # Belly Button Biodiversity
 
-![Gun Image](https://storage.googleapis.com/kaggle-datasets-images/455/925/944efec6f9c143560a4a8f5ff8efbf59/dataset-cover.jpg)
+![Bacteria Image](https://raw.githubusercontent.com/Cosette3737/Interactive-Visualizations/main/Images/bacteria2.jpg)
 
 
 # Project Scope
@@ -12,7 +12,10 @@
     -D3 
     -CSS
     -JSON
-    
+ 
+ 
+ ![BubbleGraph](https://raw.githubusercontent.com/Cosette3737/Interactive-Visualizations/main/Images/dashboard.JPG)
+ 
 # Process
 1. App.js
 
@@ -27,19 +30,19 @@ After the plots are created and functioning, the dashboard is personalized with 
 # Results
 
 
-
+![Horizontal BarChart](https://raw.githubusercontent.com/Cosette3737/Interactive-Visualizations/main/Images/barchart.JPG)
 
 In the above horizontal barchart, it is easy to compare the test subjects top 10 OTU's in an easy to follow chart. 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-![states killed](Images/states1.png)
+![BubbleGraph](https://raw.githubusercontent.com/Cosette3737/Interactive-Visualizations/main/Images/bubblechart.JPG)
 
 In the above bubblegraph, it is easy to examine the OTUs of the test sample and the amount of the bacteria in each sample.  
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-![states injured](Images/states2.png)
+![Demographics](https://raw.githubusercontent.com/Cosette3737/Interactive-Visualizations/main/Images/demographics.JPG)
 
 The demographic information is presented by using key-value pairs from the metadata extracted from the JSON file.  
 
