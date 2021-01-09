@@ -1,7 +1,7 @@
 # Belly Button Biodiversity
 
 ![Bacteria Image](https://raw.githubusercontent.com/Cosette3737/Interactive-Visualizations/main/Images/bacteria2.jpg)
-
+ ![BubbleGraph](https://raw.githubusercontent.com/Cosette3737/Interactive-Visualizations/main/Images/plots.JPG)
 
 # Project Scope
 
@@ -16,7 +16,7 @@
     - Plotly
  
  
- ![BubbleGraph](https://raw.githubusercontent.com/Cosette3737/Interactive-Visualizations/main/Images/dash.JPG)
+ ![dashboard](https://raw.githubusercontent.com/Cosette3737/Interactive-Visualizations/main/Images/bellybuttondash.JPG)
  
 # Process
  - Dashboard Creation
