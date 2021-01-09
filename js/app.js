@@ -12,7 +12,8 @@ function init() {
         dropdown.append("option").text(name).property("value");
     });
     //call the createplot, and meta functions for selected test subject
-        createPlots(parsedData[0]);
+    creategauge(parsedData[0]);    
+    createPlots(parsedData[0]);
         createMeta(parsedData[0]);
         })
 }
@@ -22,7 +23,44 @@ init();
 function optionChanged(selection){
     createPlots(selection);
     createMeta(selection);
+    creategauge(selection);
 }
+function creategauge(selection) {
+    d3.json("js/samples.json").then((sampleData) => {
+        var parsedData = sampleData.metadata;
+        var sampleArray = parsedData.filter(sampleObj => sampleObj.id == selection);
+        var sample = sampleArray[0];
+        wfreq = sample.wfreq;
+        console.log(wfreq);
+        var data = [
+            {
+              domain: { x: [0, 1], y: [0, 1] },
+              value: wfreq,
+              title: { text: "Washes per Week" },
+              type: "indicator",
+              mode: "gauge+number",
+              gauge: {
+                axis: { range: [null, 9] },
+                steps: [
+                  { range: [0, 1], color: "MidnightBlue" },
+                  { range: [1, 2], color: "Navy" },
+                  { range: [2, 3], color: "DarkBlue" },
+                  { range: [3, 4], color: "MediumBlue" },
+                  { range: [4, 5], color: "RoyalBlue" },
+                  { range: [5, 6], color: "DodgerBlue" },
+                  { range: [6, 7], color: "DeepSkyBlue" },
+                  { range: [7, 8], color: "SkyBlue" },
+                  { range: [8, 9], color: "PowderBlue" }
+                ],
+              }
+            }
+          ];
+          
+          var layout = { width: 405, height: 450, margin: { t: 0, b: 0 } };
+          Plotly.newPlot('gauge', data, layout);
+    
+    }
+    )}
 function createMeta(selection) {
 // create demographic values to be put into dashboard
     d3.json("js/samples.json").then((sampleData) => {
@@ -91,6 +129,4 @@ function createPlots(selection) {
             title: "OTU ID"
             }
         };
-    Plotly.newPlot("bubble", bubblechartData, bublayout);
-    
-    })})}
+    Plotly.newPlot("bubble", bubblechartData, bublayout);})})}
