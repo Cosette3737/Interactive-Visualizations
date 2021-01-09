@@ -16,7 +16,7 @@
     - Plotly
  
  
- ![BubbleGraph](https://raw.githubusercontent.com/Cosette3737/Interactive-Visualizations/main/Images/dashboard.JPG)
+ ![BubbleGraph](https://raw.githubusercontent.com/Cosette3737/Interactive-Visualizations/main/Images/dash.JPG)
  
 # Process
  - Dashboard Creation
@@ -49,5 +49,12 @@ In the above bubblegraph, it is easy to examine the OTUs of the test sample and 
 ![Demographics](https://raw.githubusercontent.com/Cosette3737/Interactive-Visualizations/main/Images/demographics.JPG)
 
 The demographic information is presented by using key-value pairs from the metadata extracted from the JSON file.  
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Gauge ##
+
+![Gauge](https://raw.githubusercontent.com/Cosette3737/Interactive-Visualizations/main/Images/plots.JPG)
+
+Extracting the selected test subjects number of washes per week (WFREQ), we can create a gauge to easily see the value of washes per week.  
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
